@@ -37,26 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    Rocket.style.bottom = "0px";
+    Rocket.style.position = "absolute";
+
     let xpos = 0;
     let ypos = 0;
 
     Up.addEventListener("click", () => {
         ypos -= 10;
-        Rocket.style.transform = `translate(${xpos}, ${ypos}px)`
+        Rocket.style.transform = `translate(${xpos}px, ${ypos}px)`
     })
 
     Down.addEventListener("click", () => {
         ypos += 10;
-        Rocket.style.transform = `translate(${xpos}, ${ypos}px)`
+        Rocket.style.transform = `translate(${xpos}px, ${ypos}px)`
     })
 
     Left.addEventListener("click", () => {
         xpos -= 10;
-        Rocket.style.transform = `translate(${xpos}, ${ypos}px)`
+        Rocket.style.transform = `translate(${xpos}px, ${ypos}px)`
     })
 
     Right.addEventListener("click", () => {
         xpos += 10;
-        Rocket.style.transform = `translate(${xpos}, ${ypos}px)`
+        Rocket.style.transform = `translate(${xpos}px, ${ypos}px)`
     })
 })
